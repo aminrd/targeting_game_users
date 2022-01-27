@@ -5,6 +5,13 @@ __pycache__/
 
 # C extensions
 *.so
+data/*.csv
+data/*.json
+data/*.parquet
+data/*.txt
+data/*.db
+
+.idea/
 
 # Distribution / packaging
 .Python
