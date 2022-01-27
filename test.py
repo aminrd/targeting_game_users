@@ -7,3 +7,5 @@ data_manager = helper.DataManager(users_path='./data/ka_users.csv',
 
 df_merged = data_manager.get_merged_data()
 
+print(df_merged.head())
+print('Test Finished')

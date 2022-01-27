@@ -69,9 +69,9 @@ class DataManager:
         if verbose:
             print("Loading data from files...")
 
-        self.users = self.read_table(users_path)
-        self.actions = self.read_table(actions_path)
-        self.devices = self.read_table(devices_path)
+        self.users = self.read_table(users_path, verbose)
+        self.actions = self.read_table(actions_path, verbose)
+        self.devices = self.read_table(devices_path, verbose)
         self.merge_on = merge_on
 
         if verbose:
