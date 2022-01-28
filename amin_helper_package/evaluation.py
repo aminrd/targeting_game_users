@@ -14,7 +14,10 @@ def comptue_error(y, y_hat):
 
 def to_categorial(y, y_hat, n_classes=4):
     y_c = np.array(y * n_classes).astype('int')
+    y_c[y_c == n_classes] = n_classes - 1
+
     y_hat_c = np.array(y_hat * n_classes).astype('int')
+    y_hat_c[y_hat_c == n_classes] = n_classes - 1
     return y_c, y_hat_c
 
 
